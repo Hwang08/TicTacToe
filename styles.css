@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: bebas neue, open sans, montserrat, helvetica ,arvo;
+  background-color: darkgrey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.score {
+  border: 3px solid #000;
+  height: 100px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-score {
+  margin: 10px 0px;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.scoreboard {
+  display: grid;
+  margin-top: 20px;
+  grid-template-areas: 
+    "scoreboard-square1 scoreboard-square2 scoreboard-square3"
+    "scoreboard-square4 scoreboard-square5 scoreboard-square6"
+    "scoreboard-square7 scoreboard-square8 scoreboard-square9";
+}
+
+.scoreboard-square {
+  border: 3px solid #000;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  font-weight: bold;
+}
+
+#one{
+  grid-area: scoreboard-square1;
+  border-width: 0px 3px 3px 0px;
+}
+#two{
+  grid-area: scoreboard-square2;
+  border-width: 0px 3px 3px 3px;
+}
+#three{
+  grid-area: scoreboard-square3;
+  border-width: 0px 0px 3px 3px;
+}
+#four{
+  grid-area: scoreboard-square4;
+  border-width: 3px 3px 3px 0px;
+}
+#five{
+  grid-area: scoreboard-square5;
+  border-width: 3px 3px 3px 3px;
+}
+#six{
+  grid-area: scoreboard-square6;
+  border-width: 3px 0px 3px 3px;
+}
+#seven{
+  grid-area: scoreboard-square7;
+  border-width: 3px 3px 0px 0px;
+}
+#eight{
+  grid-area: scoreboard-square8;
+  border-width: 3px 3px 0px 3px;
+}
+#nine{
+  grid-area: scoreboard-square9;
+  border-width: 3px 0px 0px 3px;
+}
+
+.btn-container{
+  margin: 50px 0 0 0;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+button:focus {
+  display: none;
+}
